@@ -38,17 +38,24 @@
     <script type="text/javascript" src="theme/js/slides.js"></script>
     
     
-    
-      <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-          tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
-        });
-      </script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     <!-- /Javascripts -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 </head>
-<body>
+<body style="!important;">
   <div id="blank"></div>
   <div class="presentation">
     <div id="current_presenter_notes">
@@ -58,7 +65,7 @@
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-1">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Lecture 3: Matrix Decompositions</h1></header>
@@ -71,6 +78,8 @@
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -80,13 +89,14 @@
             <aside class="page_number">
               1/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-2">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Emmy Noether</h1></header>
@@ -107,6 +117,8 @@
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -116,13 +128,14 @@
             <aside class="page_number">
               2/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-3">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Notation</h1></header>
@@ -140,6 +153,8 @@ Matrices $A \in \mathbb{R}^{n \times m}$, which represent linear transformations
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -149,13 +164,14 @@ Matrices $A \in \mathbb{R}^{n \times m}$, which represent linear transformations
             <aside class="page_number">
               3/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-4">
+        <div class="slide">
           <div class="inner">
             
             
@@ -174,6 +190,8 @@ The resulting product $AB$ is the same, however the choice of method will often 
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -183,13 +201,14 @@ The resulting product $AB$ is the same, however the choice of method will often 
             <aside class="page_number">
               4/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-5">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Exercise</h1></header>
@@ -211,6 +230,8 @@ $$</p></section>
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -220,13 +241,14 @@ $$</p></section>
             <aside class="page_number">
               5/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-6">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Positive Definite Matrices</h1></header>
@@ -244,6 +266,8 @@ Positive definite matrices are closely related to positive-definite symmetric bi
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -253,13 +277,14 @@ Positive definite matrices are closely related to positive-definite symmetric bi
             <aside class="page_number">
               6/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-7">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Properties</h1></header>
@@ -280,6 +305,8 @@ Positive definite matrices are closely related to positive-definite symmetric bi
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -289,13 +316,14 @@ Positive definite matrices are closely related to positive-definite symmetric bi
             <aside class="page_number">
               7/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-8">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Exercise</h1></header>
@@ -314,6 +342,8 @@ is positive definite.</p></section>
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -323,13 +353,14 @@ is positive definite.</p></section>
             <aside class="page_number">
               8/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-9">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Application: Covariance Matrices</h1></header>
@@ -348,6 +379,8 @@ $$</p>
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -357,13 +390,14 @@ $$</p>
             <aside class="page_number">
               9/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-10">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Spectral Theorem</h1></header>
@@ -382,6 +416,8 @@ where $E$ is orthogonal ($E^T = E^{-1}$) and $\Sigma$ is a diagonal matrix of re
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -391,13 +427,14 @@ where $E$ is orthogonal ($E^T = E^{-1}$) and $\Sigma$ is a diagonal matrix of re
             <aside class="page_number">
               10/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide has_notes slide-11">
+        <div class="slide has_notes">
           <div class="inner">
             
             <header><h1>Application: PCA</h1></header>
@@ -416,6 +453,8 @@ We call this the Principal Components Analysis of $X$. </p>
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -425,13 +464,14 @@ We call this the Principal Components Analysis of $X$. </p>
             <aside class="page_number">
               11/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-12">
+        <div class="slide">
           <div class="inner">
             
             
@@ -447,6 +487,8 @@ In the context of PCA $e_i$ is the i-th principal component and $\sigma_i$ is th
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -456,13 +498,14 @@ In the context of PCA $e_i$ is the i-th principal component and $\sigma_i$ is th
             <aside class="page_number">
               12/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-13">
+        <div class="slide">
           <div class="inner">
             
             
@@ -481,6 +524,8 @@ If some axis of the ellipse is small, then the variance along that axis is also 
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -490,13 +535,14 @@ If some axis of the ellipse is small, then the variance along that axis is also 
             <aside class="page_number">
               13/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-14">
+        <div class="slide">
           <div class="inner">
             
             
@@ -512,6 +558,8 @@ Finally, we <a href="https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process"
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -521,13 +569,14 @@ Finally, we <a href="https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process"
             <aside class="page_number">
               14/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-15">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Exercise</h1></header>
@@ -551,6 +600,8 @@ $$</p></section>
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -560,13 +611,14 @@ $$</p></section>
             <aside class="page_number">
               15/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-16">
+        <div class="slide">
           <div class="inner">
             
             
@@ -582,6 +634,8 @@ We will therefore explore two alternate solution methods, the latter of which wi
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -591,13 +645,14 @@ We will therefore explore two alternate solution methods, the latter of which wi
             <aside class="page_number">
               16/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-17">
+        <div class="slide">
           <div class="inner">
             
             
@@ -623,6 +678,8 @@ This is essentially a rephrasing of the <a href="https://en.wikipedia.org/wiki/C
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -632,13 +689,14 @@ This is essentially a rephrasing of the <a href="https://en.wikipedia.org/wiki/C
             <aside class="page_number">
               17/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-18">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>SVD</h1></header>
@@ -668,6 +726,8 @@ $$</p></section>
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -677,13 +737,14 @@ $$</p></section>
             <aside class="page_number">
               18/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-19">
+        <div class="slide">
           <div class="inner">
             
             
@@ -710,6 +771,8 @@ The values $\sigma_i = \sqrt{\lambda_i}$ are known as the singular values of $ A
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -719,13 +782,14 @@ The values $\sigma_i = \sqrt{\lambda_i}$ are known as the singular values of $ A
             <aside class="page_number">
               19/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-20">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Example</h1></header>
@@ -748,6 +812,8 @@ $$</p></section>
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -757,13 +823,14 @@ $$</p></section>
             <aside class="page_number">
               20/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-21">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Example</h1></header>
@@ -786,6 +853,8 @@ $$</p></section>
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -795,13 +864,14 @@ $$</p></section>
             <aside class="page_number">
               21/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-22">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Example</h1></header>
@@ -839,6 +909,8 @@ $$</p></section>
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -848,13 +920,14 @@ $$</p></section>
             <aside class="page_number">
               22/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-23">
+        <div class="slide">
           <div class="inner">
             
             
@@ -874,6 +947,8 @@ X^TX &amp;= (U \Sigma V^T )^T U \Sigma V^T<br />
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -883,13 +958,14 @@ X^TX &amp;= (U \Sigma V^T )^T U \Sigma V^T<br />
             <aside class="page_number">
               23/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-24">
+        <div class="slide">
           <div class="inner">
             
             
@@ -911,6 +987,8 @@ Computing the SVD is the standard way to calculate the PCA of a data matrix.</p>
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -920,13 +998,14 @@ Computing the SVD is the standard way to calculate the PCA of a data matrix.</p>
             <aside class="page_number">
               24/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-25">
+        <div class="slide">
           <div class="inner">
             
             
@@ -951,6 +1030,8 @@ as above.</p></section>
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -960,13 +1041,14 @@ as above.</p></section>
             <aside class="page_number">
               25/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-26">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Application: Image Compression</h1></header>
@@ -985,6 +1067,8 @@ which is <a href="http://blog.codinghorror.com/a-comparison-of-jpeg-compression-
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -994,13 +1078,14 @@ which is <a href="http://blog.codinghorror.com/a-comparison-of-jpeg-compression-
             <aside class="page_number">
               26/27
             </aside>
+
           </footer>
         </div>
       </div>
       
       <!-- slide source: lecture3.md -->
       <div class="slide-wrapper">
-        <div class="slide has_notes slide-27">
+        <div class="slide has_notes">
           <div class="inner">
             
             
@@ -1017,6 +1102,8 @@ which is <a href="http://blog.codinghorror.com/a-comparison-of-jpeg-compression-
             
             </section>
           </div>
+
+
           <footer>
             
             <aside class="source">
@@ -1026,6 +1113,7 @@ which is <a href="http://blog.codinghorror.com/a-comparison-of-jpeg-compression-
             <aside class="page_number">
               27/27
             </aside>
+
           </footer>
         </div>
       </div>
