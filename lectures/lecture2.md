@@ -17,8 +17,10 @@
 #Frequentist vs Bayesian Probability
 
 In the frequentist view, probabilities represent long run frequencies of events.
+
 $$
 $$
+
 In the Bayesian view, probability is used to quantify our uncertainty about something; hence it is fundamentally related to information theory.
 $$
 $$
