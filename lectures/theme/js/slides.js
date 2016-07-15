@@ -400,11 +400,13 @@ function main() {
                 break;
             case 37: // left arrow
             case 33: // page up
+                event.preventDefault();
                 prevSlide();
                 break;
             case 39: // right arrow
             case 32: // space
             case 34: // page down
+                event.preventDefault();
                 nextSlide();
                 break;
             case 50: // 2
@@ -558,7 +560,7 @@ function main() {
         document.addEventListener('keydown', checkModifierKeyDown, false);
         document.addEventListener('DOMMouseScroll', handleWheel, false);
 
-        window.onmousewheel = document.onmousewheel = handleWheel;
+        document.onmousewheel = handleWheel;
         window.onresize = expandSlides;
 
         for (var i = 0, el; el = slides[i]; i++) {
