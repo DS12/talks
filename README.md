@@ -1,1 +1,1 @@
-# talks
+# Machine learning lectures
